@@ -1,0 +1,341 @@
+/* Join our community
+
+30-day, hassle-free money back guarantee
+
+Gain access to our full library of tutorials along with expert code reviews.
+Perfect for any developers who are serious about honing their skills.
+
+Monthly Subscription
+
+&dollar;29 per month
+
+Full access for less than &dollar;1 a day
+
+Sign Up
+
+Why Us
+
+Tutorials by industry experts
+Peer &amp; expert code review
+Coding exercises
+Access to our GitHub repos
+Community forum
+Flashcard decks
+New videos every week */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    overflow: auto;
+    padding: 60px 30px;
+    background: var(--Light-Gray);
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+.card {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    box-shadow: 0 4px 15px hsl(203, 25%, 82%);
+}
+
+.container_ {
+    padding: 30px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container_.top h2 {
+    color: var(--Cyan);
+}
+
+.container_.top h4 {
+    color: var(--Bright-Yellow);
+    margin: 25px 0;
+}
+
+.container_.top p {
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+
+}
+
+.container_.left {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    background: hsl(179, 90%, 33%);
+    color: #fff;
+}
+
+.container_.left h3 {
+    color: #FFF;
+}
+
+.container_.left .price {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.container_.left .price span:first-child {
+    color: #fff;
+    font-size: 32.5px;
+}
+
+.container_.left .price span:last-child {
+    color: var(--Light-Gray);
+    margin-left: 10px;
+    opacity: 50%;
+}
+
+.container_.left p {
+    margin-bottom: 40px;
+}
+
+.container_.left .btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: var(--Bright-Yellow);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(59, 59, 59, 0.384);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.container_.left .btn:hover {
+    background: hsla(71, 73%, 54%, 0.747);
+    ;
+}
+
+.container_.left .btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.288);
+}
+
+.container_.right {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    background: var(--Cyan);
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.container_.right p:first-child {
+    color: #fff;
+    font-size: 20px;
+}
+
+.container_.right p:last-child {
+    color: var(--Light-Gray);
+    opacity: 60%;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1175px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .card {
+        height: 400px;
+        overflow: hidden;
+        width: 50%;
+    }
+
+    .container_ {
+        padding: 20px 25px;
+
+    }
+
+    .container {
+        flex-direction: row;
+        height: 55%;
+        box-sizing: border-box;
+    }
+
+    .container_.top {
+        height: 45%;
+    }
+
+    .container_.top h2 {
+        font-size: 20px;
+    }
+
+    .container_.top h4 {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .container_.top p {
+        font-size: 12px;
+    }
+
+    .container_.left {
+        height: 100%;
+    }
+
+    .container_.left h3 {
+        font-size: 15px;
+    }
+
+    .container_.left p {
+        margin-bottom: 30px;
+    }
+
+    .container_.left .price span:first-child {
+        font-size: 25px;
+    }
+
+    .container_.left p {
+        font-size: 12px;
+    }
+
+    .container_.right {
+        height: 100%;
+    }
+
+    .container_.right p:first-child {
+        font-size: 15px;
+    }
+
+    .container_.right p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1176px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .card {
+        height: 400px;
+        overflow: hidden;
+        width: 50%;
+    }
+
+    .container_ {
+        padding: 20px 25px;
+
+    }
+
+    .container {
+        flex-direction: row;
+        height: 55%;
+        box-sizing: border-box;
+    }
+
+    .container_.top {
+        height: 45%;
+    }
+
+    .container_.top h2 {
+        font-size: 25px;
+    }
+
+    .container_.top h4 {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .container_.top p {
+        font-size: 14px;
+    }
+
+    .container_.left {
+        height: 100%;
+    }
+
+    .container_.left h3 {
+        font-size: 20px;
+    }
+
+    .container_.left p {
+        margin-bottom: 10px;
+    }
+
+    .container_.left .price {
+        margin-top: 15px;
+    }
+
+    .container_.left .price span:first-child {
+        font-size: 28px;
+    }
+
+    .container_.left p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .container_.right {
+        height: 100%;
+    }
+
+    .container_.right p:first-child {
+        font-size: 20px;
+    }
+
+    .container_.right p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Pale-Blue);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body {
+    font-size: 14px;
+    color: var(--Pale-Blue);
+    height: 100vh;
+    background: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 0 50px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-1 {
+    width: 325px;
+    height: 200px;
+    padding: 40px 0 35px 40px;
+    box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+        -ms-flex-direction: column;
+    margin-bottom: -30px;
+}.card-1 .logo {width: 125px;}
+.icons {
+    margin-top: 40px; 
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    flex-direction: row;
+        -ms-flex-direction: row;
+} 
+.icons .icon_ {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-2 {
+    margin-top: -30px;
+    width: 325px;
+    height: 165px;
+    position: relative;
+    padding: 30px 35px 45px 30px;
+    box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+        -ms-flex-direction: column;
+}
+.card-2 .desc {text-align: center;}
+.capacity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.slider_ {
+    width: 100%; 
+    height: 20px; 
+    background-color: hsl(228, 100%, 13%);
+    padding: 1px;
+    margin-top: 20px;
+    border-radius: 20px;
+}.slider_::before {
+    background: linear-gradient(90deg, #ffa399 48%, #ff4d97 96%);
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 14px;
+    left: 2px;
+    position: relative;
+    top: 3px;
+    width: 70%;
+}.slider_::after {
+    background-color: #fff;
+    border-radius: 100%;
+    content: '';
+    display: block;
+    height: 12px;
+    left: 170px;
+    position: relative;
+    top: -10px;
+    width: 12px;
+}
+.capacity-minmax {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.remainder {
+    position: absolute;
+    width: 180px;
+    height: 75px;
+    align-self: center;
+    bottom: -40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: var(--Grayish-Blue);
+}.remainder strong {font-size: 40px;color: black; margin-right: 10px;}
+
+@media screen and (min-width: 790px) {
+    body {
+        overflow-x: hidden;
+        background: left bottom/contain url(../images/bg-desktop.png) no-repeat var(--Very-Dark-Blue);
+    }.container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .container .card-1 {
+        transform: scale(0.8);
+        margin: 0;
+        margin-right: -50px;
+    }.container .card-2 {
+        transform: scale(0.8);
+        width: 600px;
+        margin: 0;
+        margin-left: -15px;
+        margin-top: 25px;
+    }.card-2 .desc {text-align: left;}
+
+    .slider_::after {
+        background-color: #fff;
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: 12px;
+        left: 67.5%;
+        position: relative;
+        top: -10px;
+        width: 12px;
+    }
+    .remainder {
+        top: -50px;
+        right: 40px;
+    }.remainder::after {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        right: 0;
+        bottom: -23px;
+        border-top: 30px solid #fff;
+        border-left: 30px solid transparent;
+    }
+}
+

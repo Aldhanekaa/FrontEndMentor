@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+:root {
+    --Manrope: 'Manrope', sans-serif;
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--Manrope);
+}
+body {
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+
+}
+.card {
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 80%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden !important;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.img-bg {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}.img-bg img {
+    width: 100%;
+    height: 110%;
+    position: relative;
+    transform: scale(1.1);
+    top: 0px;
+}
+.main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}.main-card h3 {color: var(--Very-Dark-Grayish-Blue);}
+.main-card p {
+    color: var(--Desaturated-Dark-Blue);
+}
+.author {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}.author_ {
+    display: flex;
+}.author-profile {
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}.author-profile img {width: 100%;height: 100%;}
+.author-info{display: flex; flex-direction: column;}
+.author-info h4 {color: var(--Very-Dark-Grayish-Blue);}
+.author-info p {color: var(--Grayish-Blue);}
+
+.share-btn {
+    width: 17%; 
+    height: 100%; 
+    color: var(--Desaturated-Dark-Blue); background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+    z-index: 999;
+}.share-btn:hover {
+    background-color: var(--Desaturated-Dark-Blue);
+    color: var(--Light-Grayish-Blue);
+}
+
+.share {
+    width: 75%;
+    height: 12%;
+    position: absolute;
+    bottom: 62px;
+    box-sizing: border-box;
+    padding: 0px 30px;
+    display: flex;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:  10px;
+    transition: .3s;
+    opacity: 0;
+}.share.animate {
+    opacity: 1;
+    visibility: visible;
+}
+
+.share_ {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}.share_ h4 {
+    letter-spacing: 5px;
+    font-size:15px;
+    color: var(--Desaturated-Dark-Blue);
+}.share .icon {
+    display: flex;
+    margin-left: 5px;
+}.icon li {list-style: none; margin: 0 10px;}
+
